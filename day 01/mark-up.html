@@ -7,48 +7,71 @@
     <link rel="stylesheet" href="../reset.css">
     <style>
         header{
-           display: flex;
+            width: 1000px;
             height: 100px;
+            border: 1px solid #222;
+            display: flex;
             justify-content: space-between;
-            border: 2px solid #222;
-        }
+            /* 화면에서 가운데로 오도록 함 가운데를 정렬하는 속성이라고 생각XX */
+            margin: 0 auto;
+            margin-bottom: 8px;
+            }
 
         h1{
             width: 200px;
-            height: auto;
+            /* 높이를 flex로 주면 헤더 높이가 변할때 알아서 바뀜 
+            line-height는 바꿔줘야함*/
             display: flex;
             background-color: yellow;
             justify-content: center;
             align-items: center;
             font-size: 32px;
             font-weight: bold;
-        }
-
+            }
+           
         nav{
-            background-color: antiquewhite;    
-            }
-
-        ul:nth-of-type(1){
-            width: 300px;
-            height: 26px;
+            background-color: antiquewhite;
             display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+            /* menu글자가 정렬하는 방향을 바꿈 */
+            flex-direction: column;
+            justify-content: space-between;
+            }
+        .menu-container{
+            display: flex;
             background-color: yellow;
-            margin-bottom: 16%;
             }
-            
-            ul:nth-of-type(2){
-            width: 300px;
-            height: 26px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+        .menu-container:last-child{
             background-color: orange;
             }
-        main > article{
-            border: 2px solid #222;
-    
+        .menu-content > a{
+            display: block;
+            /* 메뉴근처 박스도 클릭될 수 있도록 크기 키우기 */
+            padding: 8px 24px;
+            text-decoration: none;
+            color: #222;
+            }
+            .wrap{
+                width: 1000px;
+                margin: 0 auto;
+                display: flex;
+                gap: 8px;
+                margin-bottom: 8px;
+                
+            }
+
+        article{
+            
+            border: 1px solid #222;
+            gap: 8px;
+            
+        }
+        article > h2{
+            font-size: 24px;
+            font-weight: bold;
+            background-color: antiquewhite;
+        }
+        aside{
+            width: 320px;
         }
        
                 
@@ -60,16 +83,16 @@
     <h1>WEB-logo</h1>
     <nav>
         <ul class="menu-container">
-            <li class="menu-content">menu</li>
-            <li class="menu-content">menu</li>
-            <li class="menu-content">menu</li>
-            <li class="menu-content">menu</li>
+            <li class="menu-content"><a href="">menu</a></li>
+            <li class="menu-content"><a href="">menu</a></li>
+            <li class="menu-content"><a href="">menu</a></li>
+            <li class="menu-content"><a href="">menu</a></li>
         </ul>
         <ul class="menu-container">
-            <li class="menu-content">menu</li>
-            <li class="menu-content">menu</li>
-            <li class="menu-content">menu</li>
-            <li class="menu-content">menu</li>
+            <li class="menu-content"><a href="">menu</a></li>
+            <li class="menu-content"><a href="">menu</a></li>
+            <li class="menu-content"><a href="">menu</a></li>
+            <li class="menu-content"><a href="">menu</a></li>
         </ul>
     </nav>
    </header>
