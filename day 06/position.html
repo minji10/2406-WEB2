@@ -18,6 +18,7 @@
         .static-box{
             /* 포지션의 기본값 */
             position: static;
+            background-color: cadetblue
             /* 정적, 고정 이런 뜻을 가지고 있으며,
             static 상태로는 이후에 나올 각종 position속성들과
             전혀 상호작용 하지 못한다. */
@@ -27,6 +28,7 @@
             position: relative;
             /* 이 속성은 기존의 흐름을 따라가지만 position의 영향을 받는다 */
             top: 50px;
+            background-color: pink;
         }
         .absolute-box{
             position: absolute;
@@ -37,7 +39,8 @@
             height: 50px;
         }
         .big-box{
-
+            width: 150px;
+            height: 150px;
         }
     </style>
 </head>
@@ -67,6 +70,10 @@
         <div class="box mini-box absolute-box" >abs</div>
     </div>
 
-    <div class="rel-box box big-box"></div>
+    <div class="rel-box box big-box">rel-box
+        <div class="box absolute-box">absolute-p
+            <div class="box absolute-box mini-box">absolute-c</div>
+        </div>
+    </div>
 </body>
 </html>
