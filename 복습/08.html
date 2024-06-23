@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: thistle;
+            border: 1px solid #222;
+            
+            font-size: 16px;
+            font-weight: bold;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: 0.5s;
+        }
+
+        .wh-box:hover{
+            width: 200px;
+            height: 200px;
+        }
+        .scale-box:hover{
+            transform: scale(2);
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box wh-box">wh box</div>
+    <div class="box scale-box">scale box</div>
+    <div class="box wh-box">wh box</div>
+    <div class="box scale-box">scale box</div>
+</body>
+</html>
