@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            transition: 0.5s;
+
+
+            /* 트렌지션을 어느 속성에 적용할것인지 직접 설정 (기본값 all) */
+            transition-property: width,height;
+
+            /* 트렌지션 지속시간 */
+            transition-duration: 0.5s,0.5s;
+            /* 트렌지션을 재생할 가속도 함수 (기본값은 ease) */
+            transition-timing-function: ease,ease;
+            /* 트렌지션 재생까지 지연시킬 시간 */
+            transition-delay: 0,0.5s;
+        }
+        .lin{
+            transition-timing-function: linear;
+        }
+        .eas{
+            transition-timing-function: ease;
+        }
+        .box:hover{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lin box"></div>
+        <div class="eas box"></div>
+    </div>
+</body>
+</html>
