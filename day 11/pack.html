@@ -6,51 +6,71 @@
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
     <style>
-        body{
+          body {
             background-color: #222;
         }
-        .m{
+
+        .pack-man {
+            transition: 0.2s;
+            width: 100px;
+            height: 100px;
+        }
+
+        .pack-rotate {
+            transition: 0.2s;
+        }
+        .m {
+            display: block;
             width: 100px;
             height: 50px;
             background-color: white;
         }
-        .top-m{
+
+        .top-m {
             border-top-left-radius: 50px;
             border-top-right-radius: 50px;
-            animation: bite-up linear infinite alternate 0.2s;
-            transform-origin: top;
+            transform-origin: bottom;
+            animation: bite-up infinite alternate linear 0.2s;
+
         }
-        .bot-m{
+
+        .bot-m {
+            transform-origin: top;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
-            animation: bite-down linear infinite alternate 0.2s;
-            transform-origin: bottom;
+            animation: bite-down infinite alternate linear 0.2s;
         }
-        @keyframes bite-up{
-            form{
-                transform: rotate(0deg)
+
+        @keyframes bite-up {
+            from {
+                transform: rotate(0deg);
             }
-            to{
-                transform: rotate(30deg)
+            to {
+                transform: rotate(30deg);
             }
+            
         }
-        @keyframes bite-down{
-            form{
-                transform: rotate(0deg)
+        @keyframes bite-down {
+            from {
+                transform: rotate(0deg);
             }
-            to{
-                transform: rotate(-30deg)
+            to {
+                transform: rotate(-30deg);
             }
+            
         }
+
+
     </style>
 </head>
 <body>
-    <div class="pack">
+    <div class="pack-man">    
         <div class="pack-rotate">
-            <div class="m top-m"></div>
-            <div class="m bot-m"></div>
+            <span class="m top-m"></span>
+            <span class="m bot-m"></span>
         </div>
     </div>
+
     <script>
 
         const packMan = document.querySelector('.pack-man');
