@@ -6,111 +6,131 @@
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
     <style>
-        #my-section{
-            padding: 0 32px;
-            max-width: 1280px;
-            margin: 0 auto;
+        .logo-spr{
+            display: block;
+            background: url('../연습img/spr_intro.png') no-repeat 0 -98px;
+	        width: 78px;
+	        height: 29px;
+        }
+        .hide-text{
+            position: absolute;
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(0 0 99.9% 99.9%);
+            overflow: hidden;
+            height: 1px;
+            width: 1px;
+            padding: 0;
+            border: 0;
         }
        
     </style>
 </head>
 <body>
-    <section id="my-section">
-    <div class="container">
-        <header>
-            <h3>BAND</h3>
-            <nav>
-                <ul class="nav-container">
-                    <li class="nav-menu">
-                        <select name="언어" id="언어">
-                            <option value="한국어">한국어</option>
-                            <option value="영어">영어</option>
-                            <option value="중국어">중국어</option>
-                        </select>
-                    </li>
-                    <li class="nav-menu"><a href="">회원가입</a></li>
-                    <li class="nav-menu"><button type="submit">로그인</button></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="top-main">
-            <link rel="stylesheet" href="../연습img/bg_sloganImg.jpg">
-            <div class="option-box">
-                    <div class="title-box">
-                        <p class="title">모임이 쉬워진다! 우리끼리 밴드</p>
-                        <p class="sub-title">당신의 모임도 BAND로 시작하세요</p>
-                    </div>
-                    <div class="button-box">
-                        <button type="main log">로그인</button>
-                        <button type="main new">회원가입</button>
-                    </div>
-                    <div class="tt">
-                        <p id="">내가 밴드를 만나려면<a href="">밴드 찾기</a></p>
-                        <p id="">모임별 밴드 활용법<a href="">밴드 가이드 보기</a></p>
-                        <p id="">만 13세 미만이면?<a href="">'밴드 키즈' 알아보기</a></p>
-                    </div>
-
-            </div>
+   <header>
+    <div class="header-container">
+        <a href="#" class="logo-spr">
+            <span class="hide-text">
+                BAND
+            </span>
+        </a>
+        <div class="header-buttons">
+            <select name="" id="">
+                <option value="">한국어</option>
+                <option value="">English</option>
+            </select>
+            <a href="#">회원가입</a>
+            <a href="#" class="band-button">로그인</a>
         </div>
     </div>
+   </header>
 
-    <main>
-        <!-- <div class="main-intro-img">
-            <link rel="stylesheet" href="../연습img/bg_intro.jpg">
-        </div>  백그라운드 이미지로 넣기 사진에 높이를 줄 수 있지만 글자에 패딩을 줘서 공간을 늘리기도 가능 -->
-        <div class="intro-title-box">
-            <h2>모임을 위한 공간, 밴드</h2>
-            <p>밴드는 그룹 멤버와 함께 하는 공간입니다.
-                동호회, 스터디, 주제별 모임을 밴드로 시작하세요.
-            </p>
-        </div>  
-    </main>
-
-    <div class="sub-main">
-        <div class="main-box">
-            <img src="../연습img/img_seo01.jpg" alt="">
-            <div class="main-title-box">
-                <p>어떤 모임이라도!</p>
-                <p>친구, 가족, 동료 등 함께 하고 싶은 사람과 우리만의 공간을 만들어보세요.</p>
-            </div>
-        </div>
-        <div class="main-box">
-            <img src="../연습img/img_seo02.jpg" alt="">
-            <div class="main-title-box">
-                <p>모임에 딱 맞는 기능들</p>
-                <p>투표로 의견을 모으고, 함게 일정을 공유하며 게시판과 앨범에는 추억을 쌓아보세요.</p>
-            </div>
-        </div>
-        <div class="main-box">
-            <img src="../연습img/img_seo03.jpg" alt="">
-            <div class="main-title-box">
-                <p>내가 원하는 모임 찾기</p>
-                <p>취미, 스포츠 또래 모임 등 나와 같은 관심사 밴드를 찾을 수 있어요</p>
-            </div>
+   <section id="intro">
+    <div class="section-container">
+        <figure>
+            <img src="../연습img/bg_sloganImg.jpg" alt="">
+        </figure>
+        <div class="intro-contents">
+            <h1></h1>
+            <p></p>
+            <a href="#" class="band-button"></a>
+            <a href="#"></a>
+            <p> <a href="#" class="more-link"></a></p>
+            <p> <a href="#" class="more-link"></a></p>
+            <p> <a href="#" class="more-link"></a></p>
         </div>
     </div>
+   </section>
 
-        <div class="rec-list">
-            <div class="rec-box">
-                <div class="rec-top-box">
-                    <title>이런 밴드는 어때요</title>
-                    <a href="">모두보기</a>
-                </div>
+   <!-- 백그라운드사진 -->
+   <section id="meeting">
+    <dis class="meeting-texts">
+        <h2></h2>
+        <p></p>
+    </dis>
+   </section>
 
-                <div class="rec">
-                    <rec-img><img src="../연습img/5_0c5Ud018svc19ll62lkpae6d_4269mp.jpg" alt=""></rec-img>
-                    <div class="exp-box">
-                        <p></p>
-                        <p></p>
-                        <button type="button"><a href=""> </a></button>
-                    </div>
-                </div>
-
-            </div>
+   <section id="meeting-explane">
+    <div class="section-container">
+        <div class="explane-content">
+            <figure>
+                <img src="" alt="">
+            </figure>
+            <h3></h3>
+            <p></p>
         </div>
+    </div>
+   </section>
 
-    <section id=""></section>
-</section>
+   <section id="recommand">
+    <div class="section-container">
+        <div class="section-header">
+            <h2></h2>
+            <a href="#"></a>
+        </div>
+        <ul class="band-recommand-list">
+            <li class="band-recommand">
+                <figure>
+                    <img src="" alt="">
+                </figure>
+                <div class="band-recommand-content">
+                    <h3><a href="#"></a></h3>
+                    <p></p>
+                    <p class="meta"></p>
+                    <a href="#"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+   </section>
+
+   <section id="app-download">
+    <div class="section-container">
+        <figure>
+            <img src="" alt="">
+        </figure>
+        <div class="app-download-text">
+            <h2></h2>
+            <p></p>
+        </div>
+        <div class="app-download-buttons">
+            <a href="#" class="google-play download-button"></a>
+            <a href="#" class="app-store download-button"></a>
+        </div>
+    </div>
+   </section>
+
+   <footer>
+    <div class="section-container">
+        <nav class="footer-nav">
+            <ul class="footer-menu-list">
+                <li></li>
+            </ul>
+        </nav>
+        <p class="footer-copy">
+            BAND &copy; 2024
+        </p>
+    </div>
+   </footer>
+
 </body>
 </html>
